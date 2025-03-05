@@ -1,5 +1,5 @@
 ## Conditioned 3D Deep Kriging with Locally Varying Anisotropy
-This repository contains Jupyter notebooks for performing both Conditioned 3D DeepKriging(C-DK) and C-DK with Locally Varying Anisotropy (LVA) on a 3D copper (Cu) example.
+This repository contains Jupyter notebooks for performing both Conditioned 3D DeepKriging (C-DK) and C-DK with Locally Varying Anisotropy (LVA) on a 3D copper (Cu) example.
 
 C-DK 3D-Nested CV.ipynb: This notebook demonstrates the expansion of DK into 3D and the integration of Locally Dependent Moments (LDM) to accurately reproduce observed values at sampled locations without increasing the computational burden. 
 
