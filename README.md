@@ -6,10 +6,8 @@ This repository provides implementations of Conditioned DeepKriging (C-DK) and C
 ![Figure7](https://github.com/user-attachments/assets/15386a99-327f-45c5-9869-e93e7632f673)
 
 ## Comparative Framework
-The conceptual diagram below illustrates the comparative framework between Euclidean and HFM-based SPD, as modified from [Bogrash et al., 2023](https://www.earthdoc.org/content/papers/10.3997/2214-4609.202335075). In this model, the HFM-based shortest path distance (SPD) is integrated into the embedding layer, replacing the kernel basis functions traditionally used in DK. In the diagram:
-- S denotes the source location.
-- D indicates the destination point.
-- V_i represents an intermediate vertex.
+The conceptual diagram below illustrates the comparative framework between Euclidean and HFM-based SPD, as modified from [Bogrash et al., 2023](https://www.earthdoc.org/content/papers/10.3997/2214-4609.202335075). In this model, the HFM-based shortest path distance (SPD) is integrated into the embedding layer, replacing the kernel basis functions traditionally used in DK. 
+
 ![Figure3](https://github.com/user-attachments/assets/b39c7a13-32ce-45d4-b516-6e0860a3d504)
 
 ### Getting Started with 3D Estimation Using C-DK and C-DK+LVA
