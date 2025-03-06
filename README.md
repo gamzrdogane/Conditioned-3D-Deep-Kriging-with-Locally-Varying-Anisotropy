@@ -2,11 +2,13 @@
 This repository contains Jupyter notebooks for performing both Conditioned 3D DeepKriging (C-DK) and C-DK with Locally Varying Anisotropy (LVA) (i.e. C-DK+LVA) on a 3D copper (Cu) example.
 
 ### The structure of our DK in this study: 
-![image](https://github.com/user-attachments/assets/7339979c-73cf-452c-a3f2-f20e2a78e528)
+![Figure7](https://github.com/user-attachments/assets/15386a99-327f-45c5-9869-e93e7632f673)
 
 
-Conceptual diagram illustrating the comparative framework between Euclidean and HFM-based SPD (integrated into the embedding layer, (modified from (Bogrash et al., 2023))). S denotes the source location, D indicates the destination point, and V_i represents an intermediate vertex.
-![image](https://github.com/user-attachments/assets/a2e3871d-5b92-4567-bc18-3dffb21eb626)
+
+## Conceptual diagram illustrating the comparative framework between Euclidean and HFM-based SPD (integrated into the embedding layer, (modified from (Bogrash et al., 2023))). S denotes the source location, D indicates the destination point, and V_i represents an intermediate vertex.
+![Figure3](https://github.com/user-attachments/assets/b39c7a13-32ce-45d4-b516-6e0860a3d504)
+
 
 
 ### Getting Start for the 3D estimation
