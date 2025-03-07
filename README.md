@@ -1,20 +1,22 @@
 ## Conditioned 3D DeepKriging with Locally Varying Anisotropy
 
-This repository provides implementations of Conditioned DeepKriging (C-DK) and Conditioned DeepKriging with Locally Varying Anisotropy (C-DK+LVA) for a 3D copper (Cu) estimation example.
+This repository provides implementations of the Conditioned DeepKriging (C-DK) and Conditioned DeepKriging with Locally Varying Anisotropy (C-DK+LVA) models for a 3D copper (Cu) estimation example.
 
 ### Overview of DeepKriging (DK) Structure in This Study
 ![Figure7](https://github.com/user-attachments/assets/15386a99-327f-45c5-9869-e93e7632f673)
 
-## HFM-based Shortest Path Distance (SPD)
-The conceptual diagram below illustrates the comparative framework between Euclidean and HFM-based SPD, modified from [Bogrash et al., 2023](https://www.earthdoc.org/content/papers/10.3997/2214-4609.202335075). In the C-DK+LVA model, HFM-based SPD captures the direction and magnitude of anisotropy from the LVA field and integrates it into the embedding layer, replacing the traditional kernel basis functions used in DK.
+## Hamiltonian Fast Marching (HFM)-based Non-Euclidean Shortest Path Distances (SPD) Matrix 
+The conceptual diagram below illustrates the comparative framework between Euclidean and HFM-based SPD, as modified from [Bogrash et al., 2023](https://www.earthdoc.org/content/papers/10.3997/2214-4609.202335075). The C-DK+LVA model utilizes this non-Euclidean SPD matrix to accurately capture both the direction and magnitude of anisotropy from the LVA field. These measurements are then integrated into the model's embedding layer, replacing the traditional kernel basis functions used in DK model. This modification enhances the model's ability to represent anisotropic features in the data.
 
 ![Figure3](https://github.com/user-attachments/assets/b39c7a13-32ce-45d4-b516-6e0860a3d504)
 
 ### Getting Started with 3D Estimation Using C-DK and C-DK+LVA
 
-**Folder C-DK 3D-Nested CV:** This folder includes an example Data folder essential for the implementation of the C-DK model and a Jupyter notebook that demonstrates how DK is expanded into 3D. Conditioning is ensured using Locally Dependent Moments (LDM). To run the code, simply execute C-DK 3D-Nested CV.ipynb. You may need GSLIB executable files.
+**Folder C-DK 3D-Nested CV:** This folder contains an example Data folder for implementing the C-DK model, along with a Jupyter notebook that demonstrates the extension of DeepKriging into 3D. Conditioning is achieved using Locally Dependent Moments (LDM). To execute the code, run `C-DK 3D-Nested CV.ipynb`. 
 
-**Folder C-DK+LVA 3D-Nested CV:** This folder includes a Data folder essential for implementing C-DK+LVA, which enhances the model's ability to depict complex geological features. To run the code, simply execute `C-DK+LVA 3D-Nested CV.ipynb`. The same dataset is used with Folder C-DK 3D-Nested CV.
+**Folder C-DK+LVA 3D-Nested CV:** This folder contains the same example Data folder as in Folder C-DK 3D-Nested CV, which is required for implementing the C-DK+LVA model. This model enhances the ability to represent complex geological features. To execute the code, run C-DK+LVA 3D-Nested CV.ipynb. 
+
+Note that GSLIB executable files may be required.
 
 ### Development and Testing Environment
 The project was developed and tested with the following software and library versions:
@@ -34,5 +36,3 @@ The project was developed and tested with the following software and library ver
 | **scikit-learn**    | 1.6.0 |
 | **TensorFlow**      | 2.18.0 |
 | **hyperopt**        | 0.2.7 |
-
-Additionally, the codes require GSLIB executable files.
