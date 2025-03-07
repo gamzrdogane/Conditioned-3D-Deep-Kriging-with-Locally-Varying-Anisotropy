@@ -6,7 +6,7 @@ This repository provides implementations of the Conditioned DeepKriging (C-DK) a
 ![Figure7](https://github.com/user-attachments/assets/15386a99-327f-45c5-9869-e93e7632f673)
 
 ## Hamiltonian Fast Marching (HFM)-based Non-Euclidean Shortest Path Distances (SPD) Matrix 
-The conceptual diagram below illustrates the comparative framework between Euclidean and HFM-based SPD, as modified from [Bogrash et al., 2023](https://www.earthdoc.org/content/papers/10.3997/2214-4609.202335075). The C-DK+LVA model utilizes this non-Euclidean SPD matrix to accurately capture both the direction and magnitude of anisotropy from the LVA field. These measurements are then integrated into the model's embedding layer, replacing the traditional kernel basis functions used in DK model. This modification enhances the model's ability to represent anisotropic features in the data.
+The conceptual diagram below illustrates the comparative framework between Euclidean and HFM-based SPD, as modified from [Bogrash et al., 2023](https://www.earthdoc.org/content/papers/10.3997/2214-4609.202335075). The C-DK+LVA model utilizes this non-Euclidean SPD matrix to accurately capture anisotropy from the LVA field. These measurements are then integrated into the model's embedding layer, replacing the traditional kernel basis functions used in DK model. 
 
 ![Figure3](https://github.com/user-attachments/assets/b39c7a13-32ce-45d4-b516-6e0860a3d504)
 
@@ -14,7 +14,7 @@ The conceptual diagram below illustrates the comparative framework between Eucli
 
 **Folder C-DK 3D-Nested CV:** This folder contains an example Data folder for implementing the C-DK model, along with a Jupyter notebook that demonstrates the extension of DeepKriging into 3D. Conditioning is achieved using Locally Dependent Moments (LDM). To execute the code, run `C-DK 3D-Nested CV.ipynb`. 
 
-**Folder C-DK+LVA 3D-Nested CV:** This folder contains the same example Data folder as in Folder C-DK 3D-Nested CV, which is required for implementing the C-DK+LVA model. This model enhances the ability to represent complex geological features. To execute the code, run C-DK+LVA 3D-Nested CV.ipynb. 
+**Folder C-DK+LVA 3D-Nested CV:** This folder contains the same example Data folder as in Folder C-DK 3D-Nested CV, with the addition of the LVA file, which is required for implementing the C-DK+LVA model. This model enhances the ability to represent complex geological features. To execute the code, run C-DK+LVA 3D-Nested CV.ipynb.
 
 Note that GSLIB executable files may be required.
 
