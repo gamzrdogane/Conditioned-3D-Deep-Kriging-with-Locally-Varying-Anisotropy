@@ -12,9 +12,9 @@ The conceptual diagram below illustrates the comparative framework between Eucli
 
 ### Getting Started with 3D Estimation Using C-DK and C-DK+LVA
 
-**Folder C-DK 3D-Nested CV:** This folder contains an example Data folder for implementing the C-DK model, along with a Jupyter notebook that demonstrates the extension of DeepKriging into 3D. Conditioning is achieved using Locally Dependent Moments (LDM). To execute the code, run `C-DK 3D-Nested CV.ipynb`. 
+**Folder C-DK 3D-Nested CV:** This folder includes an example Data folder necessary for implementing the C-DK model, along with a Jupyter notebook demonstrating the extension of DeepKriging into 3D. The notebook also illustrates the incorporation of conditioning, achieved using Locally Dependent Moments (LDM). To run the code, execute C-DK 3D-Nested CV.ipynb.
 
-**Folder C-DK+LVA 3D-Nested CV:** This folder contains the same example Data folder as in Folder C-DK 3D-Nested CV, with the addition of the LVA file, which is required for implementing the C-DK+LVA model. This model enhances the ability to represent complex geological features. To execute the code, run C-DK+LVA 3D-Nested CV.ipynb.
+**Folder C-DK+LVA 3D-Nested CV:** This folder contains the same example Data folder as the Folder C-DK 3D-Nested CV, with the addition of the LVA file required for implementing the C-DK+LVA model. The notebook demonstrates how this model enhances the representation of complex geological features. To run the code, execute C-DK+LVA 3D-Nested CV.ipynb.
 
 Note that GSLIB executable files may be required.
 
