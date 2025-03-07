@@ -5,8 +5,8 @@ This repository provides implementations of Conditioned DeepKriging (C-DK) and C
 ### Overview of DeepKriging (DK) Structure in This Study
 ![Figure7](https://github.com/user-attachments/assets/15386a99-327f-45c5-9869-e93e7632f673)
 
-## Comparative Framework
-The conceptual diagram below illustrates the comparative framework between Euclidean and HFM-based SPD, as modified from [Bogrash et al., 2023](https://www.earthdoc.org/content/papers/10.3997/2214-4609.202335075). In this model, the HFM-based shortest path distance (SPD) is integrated into the embedding layer, replacing the kernel basis functions traditionally used in DK. 
+## HFM-based shortest path distance (SPD)
+The conceptual diagram below illustrates the comparative framework between Euclidean and HFM-based SPD (modified from [Bogrash et al., 2023](https://www.earthdoc.org/content/papers/10.3997/2214-4609.202335075)). In the C-DK+LVA model, HFM-based SPD captures the direction and magnitude of anisotropy from the LVA field and integrates it into the embedding layer, replacing the traditional kernel basis functions used in DK.
 
 ![Figure3](https://github.com/user-attachments/assets/b39c7a13-32ce-45d4-b516-6e0860a3d504)
 
@@ -34,3 +34,5 @@ The project was developed and tested with the following software and library ver
 | **scikit-learn**    | 1.6.0 |
 | **TensorFlow**      | 2.18.0 |
 | **hyperopt**        | 0.2.7 |
+
+Additionally, the codes require GSLIB executable files.
